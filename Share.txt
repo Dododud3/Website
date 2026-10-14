@@ -1,0 +1,9 @@
+copy and paste this code into a html editor website to see my website
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<iframe width="850" height="500" src="https://codehs.com/sandbox/beigewhale7186/beigewhale7186codehsme/embed/?display_mode=displayOnly&read_only=True&show_file_tree=False" frameborder="0" allowfullscreen class="video-iframe"></iframe>
+</body>
+</html>

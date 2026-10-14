@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkSearch()" style="padding: 100px;" class="greyback">
+
+    <div id="results"></div>
+
+    <script>
+    function checkSearch() {
+        const params = new URLSearchParams(window.location.search);
+        let query = (params.get("q") || "").toLowerCase();
+
+        // Cat search
+        if (query.includes("cat")) {
+            let result = document.createElement("div");
+            result.className = "result";
+
+            let title = document.createElement("h2");
+            title.textContent = "Cat wiki";
+
+            let description = document.createElement("p");
+            description.textContent = "Learn all about our fuzzy friends";
+
+            let link = document.createElement("a");
+            link.textContent = "Link here";
+            link.href = "Catwiki.html";
+
+            result.appendChild(title);
+            result.appendChild(description);
+            result.appendChild(link);
+
+            document.getElementById("results").appendChild(result);
+        }
+
+        // Dog search
+        if (query.includes("dog")) {
+            let result = document.createElement("div");
+            result.className = "result";
+
+            let title = document.createElement("h2");
+            title.textContent = "Dog wiki";
+
+            let description = document.createElement("p");
+            description.textContent = "Learn all about our fluffy friends";
+
+            let link = document.createElement("a");
+            link.textContent = "Link here";
+            link.href = "Dogwiki.html";
+
+            result.appendChild(title);
+            result.appendChild(description);
+            result.appendChild(link);
+
+            document.getElementById("results").appendChild(result);
+        }
+
+        // Butter search
+        if (
+            query.includes("but") ||
+            query.includes("cream")
+        ) {
+            let result = document.createElement("div");
+            result.className = "result";
+
+            let title = document.createElement("h2");
+            title.textContent = "Butterpics.Mat";
+
+            let description = document.createElement("p");
+            description.textContent = "Look at creamy butter pics";
+
+            let link = document.createElement("a");
+            link.textContent = "Link here";
+            link.href = "Butterpics.html";
+
+            result.appendChild(title);
+            result.appendChild(description);
+            result.appendChild(link);
+
+            document.getElementById("results").appendChild(result);
+        }
+    }
+    </script>
+
+</body>
+</html>

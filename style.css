@@ -1,0 +1,22 @@
+.Tcenter{
+    margin-left: 35%;
+    font-size: 46px;
+      font-family: "Isometra", serif;
+}
+
+.Search_style
+{
+    margin-left: 40%;
+}
+
+div
+{
+    width: 300px;
+    height: 200px;
+    background-color: lightgray;
+}
+
+.greyback
+{
+    background-color: orangered;
+}

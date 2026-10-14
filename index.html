@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Searching...</title>
+        <!--stylesheet-->
+        <link rel="stylesheet" href="style.css">
+        <!------->
+        <!--//fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Isometra&family=Press+Start+2P&display=swap" rel="stylesheet">
+        <!------->
+
+    </head>
+    <body style="background-color: lightgray">
+        <h1 class="Tcenter">Searching.com</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+<div class="Search_style">
+    <input type="text" id="searchInput" placeholder="Search the 'internet'...">
+    <button onclick="search()">Search</button>
+</div>
+            
+        </div>
+        <script>
+            
+function search() {
+    let query = document.getElementById("searchInput").value;
+
+    if (query.trim() === "") {
+        alert("Please enter something to search!");
+        return;
+    }
+
+        window.location.href = "results.html?q=" + encodeURIComponent(query);
+        
+}
+
+document.getElementById("searchInput").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        search();
+    }
+});
+        </script>
+    </body>
+</html>
